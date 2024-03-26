@@ -37,4 +37,6 @@ pipenv shell
 ```bash
 python manage.py runserver
 ```
-### จัดทำโดย MeeMeChu
+
+## ** หากมีการแก้ไข Model อย่าลืม makemigrations และทำการ migrate ให้เรียบร้อย!!
+#### จัดทำโดย MeeMeChu
