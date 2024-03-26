@@ -1,0 +1,36 @@
+<nav>
+    <div>
+        <ul style="display: flex; list-style-type: none;">
+
+            <li>
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+            
+            {% if user.is_authenticated %}
+
+                <li style="margin-left: 10px;">
+                    <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
+                </li>
+
+                <li style="margin-left: 10px;">
+                    <form action="{% url 'logout' %}" method="post">
+                        {% csrf_token %}
+                        <button type="submit">
+                            <span>Logout</span>
+                        </button>
+                      </form>
+                </li>
+
+            {% else %}
+
+                <li style="margin-left: 10px;">
+                    <a href="{% url 'login'%}">Login</a>
+                </li>
+                <li style="margin-left: 10px;">
+                    <a href="{% url 'register'%}">Register</a>
+                </li>
+
+            {% endif %}
+        </ul>
+    </div>
+</nav>

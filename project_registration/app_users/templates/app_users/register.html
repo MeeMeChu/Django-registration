@@ -1,0 +1,16 @@
+{% extends 'app_general/base.html' %}
+
+{% block title %} Register {% endblock %}
+
+{% block content %}
+<form action="{% url 'register' %}" method="POST">
+    {% csrf_token %}
+    <div>
+        {{ form }}
+    </div>
+
+    <div>
+        <button type="submit">Sing Up</button>
+    </div>
+</form>
+{% endblock %}
