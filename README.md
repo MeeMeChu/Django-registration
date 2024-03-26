@@ -1,10 +1,10 @@
 # Django-registration
 
-สร้างระบบ Login + Register ด้วย Django
+ตัวอย่างระบบ Login + Register ด้วย Django สำหรับค่าย Django PSU
 
 สามารถ Custom Profile ของผู้ใช้ได้
 
-**เสริม Chat-GPT OpenAI สำหรับทำ Prompt engineering**
+**เสริม มีการต่อ Chat-GPT OpenAI สำหรับทำ Prompt engineering**
 
 # Install and Run project by VSCode
 
@@ -38,6 +38,6 @@ pipenv shell
 python manage.py runserver
 ```
 
-** หากมีการแก้ไข Model อย่าลืม makemigrations และทำการ migrate ให้เรียบร้อย!!**
+**หากมีการแก้ไข Model อย่าลืม makemigrations และทำการ migrate ให้เรียบร้อย!!**
 
-#### จัดทำโดย MeeMeChu
+#### จัดทำโดย MeeMeChu (Update 27/03/2024)
